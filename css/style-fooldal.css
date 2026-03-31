@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    background-image: url("../img/hatter.jpg");
+    background-size: cover;
+    background-attachment: fixed;  
+    color: #b7b7b7;
+    text-align: center;
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header > p {
+    padding-top: 40px;
+    font-family: "Didot";
+    font-size: 26px;
+}
+
+#bevezeto {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: black;   /* az img opacityvel olvashatóbb a cím */
+}
+
+#bevezeto > img {
+    width: 100%;
+    opacity: 0.7;
+}
+
+#bevezeto > h1 {
+    color: #b7b7b7;
+    text-shadow: 5px 5px black;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    margin-top: 10px;
+}
+
+hr {
+    background-color: #bde8ef;
+    height: 1px;
+    width: 90%;
+    margin: 5% 5% 10px 5%;
+    border-radius: 80px;
+    border-style: solid;
+    
+}
+
+footer {
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+footer a::after{
+    content: "-";
+}
+
+footer a::before {
+    content: "-";
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/*Table*/
+
+table{
+    margin: 8% 10% 2% 10%;
+    width: 80%;
+    table-layout: fixed;
+}
+
+
+td {
+    font-size: 35px;
+    padding: 60px 0;
+    margin-left: 10%;
+}
+
+
+/*Div*/
+
+#szellem-img:hover, #targyak-img:hover, #bizonyitekok-img:hover, #palyak-img:hover, #taktikak-img:hover{
+    animation: animopacity 4s infinite alternate;
+}
+
+#szellem-img, #targyak-img, #bizonyitekok-img, #palyak-img, #taktikak-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#szellem-img, #targyak-img, #bizonyitekok-img, #taktikak-img{
+    background-position: center;
+}
+
+#szellem-img {
+    background-image:url("../img/Főoldal/szellemek.png") ;
+}
+
+#targyak-img{
+    background-image:url("../img/Főoldal/targyak.png");
+}
+
+#bizonyitekok-img{
+    background-image:url("../img//Főoldal/bizonyitekok.png") ;
+}
+
+#palyak-img{
+    background-image:url("../img//Főoldal/palyak.png") ;
+    background-position:bottom;
+}
+
+#taktikak-img{
+    background-image:url("../img//Főoldal/taktikak.png") ;
+}
+
+
+/*link*/
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #d8d5d5;
+    
+}
+
+a:hover{
+    color: #bde8ef;
+}
+
+
+
+@keyframes animopacity {
+    100%{
+        opacity: 0.4;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    h1, header > p {
+        font-size: 20px;
+    }
+    td a h2 {
+        font-size: 25px;
+    }
+    footer p {
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+    }
+    footer a {
+        display: block;
+        font-size: 15px;
+    }
+}

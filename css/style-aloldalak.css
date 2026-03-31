@@ -1,0 +1,446 @@
+* {
+    margin: 0px;
+}
+
+body {
+    color: #b7b7b7;
+    font-size: 18px;
+    
+    background-color: RGBA(28,32,54,0.85);
+    background-image: url("../img/hatter.jpg");
+    background-size: cover;
+    background-attachment: fixed;  
+    background-blend-mode: screen;
+    font-family: sans-serif;
+
+    scrollbar-width: thin;      
+    scrollbar-color: #181d31 RGB(40,40,47);   
+}
+
+h1 {
+    padding: 50px 20px 20px 20px;
+    font-family: sans-serif;
+    font-size: 45px;
+    text-shadow: 2px 2px gray;
+}
+
+h2 {
+    font-family: oxanium;
+    padding: 50px 20px 20px 20px;
+    text-shadow: 1px 1px gray;
+}
+
+#bevezeto {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Trebuchet MS";
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-top: 2px;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+p {
+    padding-top: 10px;
+    color: #76d5e6;
+    opacity: 0.7;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;    
+}
+
+hr {
+    margin-top: 40px;
+    border-radius: 80px;
+}
+
+a {
+    color: #bde8ef;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(100, 207, 172);
+}
+
+a:active {
+    color: rgb(85, 175, 145);
+}
+
+
+
+/* Bizonyítékok */
+.bizonyitek {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    text-align: center;
+    line-height: 200%;
+}
+
+.bizonyitek  h2{
+    padding-bottom: 0;
+    font-size: 35px;
+    color: white;
+    /*border: blue 2px solid;*/
+}
+
+.bizonyitek p {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+.bizonyitek-bal {
+    margin-top: 100px;
+    width: 50%;
+    /*border: green 2px solid;*/
+
+}
+.bizonyitek-bal img {
+    width: 100%;
+    height: 100%;
+}
+
+.bizonyitek-jobb {
+    margin-top: 100px;
+    font-size: 70px;
+    margin-left: 25px;
+    width: 50%;
+    /*border: red 2px solid;*/
+}
+
+.bizonyitek-jobb img {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+}
+
+
+
+
+/* Pályák */
+.palyak{
+    display: flex;
+}
+
+.palyak img {
+    width: auto;
+    height: auto;
+}
+
+.palyak p{
+    margin-top: 150px;
+    font-size: 20px;
+    margin-left: 25px;
+    line-height: 150%;
+}
+
+
+
+/* Szellemek */
+.nevek, .taktikanevek {
+    display: flex;
+}
+
+.nevek img{
+    padding-top: 15px;  /*mert a h2-nek 50*/
+    padding-bottom: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.nevek img:hover {
+    transform: scale(1.05);
+    animation: animopacity 6s alternate infinite;
+}
+
+.biz {
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.szellemvideo {
+    width: 300px;
+    height: 225px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+video {
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+video:hover{
+    box-shadow: 1px 1px 1px 0px black ;
+}
+
+
+/* Taktikák */
+.tipplista li {
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+.tipplista {
+    margin-top: 5px;
+}
+
+.taktikakvideo{
+    display: inline-block;
+    width: 800px;
+    height: auto;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.taktikanevek img{
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.taktikanevek img:hover{
+    transform: scale(1.05);
+}
+
+
+/* tartalomjegyzék */
+#tartalomjegyzek {
+    background-color: #1e2133;
+    border-top: RGB(40,40,47) 2.5px solid;
+
+    width: 10%;
+    height: 90%;
+    position: fixed; top:38px;
+
+    font-size: 25px;
+    padding: 3rem 0;
+    
+    text-align: left;
+    overflow-y: scroll;
+    z-index: -1;
+}
+
+#tartalomjegyzek ul li {
+    list-style-type:square;
+    margin: 10px;
+}
+
+
+/* Gombok */
+#gombok{
+    width: 100%;
+    position: fixed; top:0;
+    background-color: #16192b;
+    color: #bde8ef;
+    font-size: larger;
+    padding-left: 250px;
+    overflow-x: scroll;
+}
+
+#gombok > td {
+    padding: 18px 75px;
+}
+
+
+
+ /* Logo */
+#logo{
+    width: 250px;
+    height: 100px;
+    top: 15px; left: 20px;
+    z-index: 10;
+    position: fixed;
+}
+
+#logo:hover{
+    animation: animopacity 3s alternate infinite;
+}
+
+#fo-resz {
+    top: 30px;
+    margin-left: 19%;       /*mert a tartalomjegyzék x% széles */
+    position: absolute;
+    padding: 25px 10px 10px 25px;
+    z-index: -2;
+}
+
+
+
+@keyframes animopacity {
+    to{
+        opacity: 0.3;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .bizonyitek{
+        display: block;
+        margin-bottom: 5px;
+        padding-bottom: 0;
+        margin-top: 40px;
+        margin-left: 15px;
+    }
+    .bizonyitek-bal{
+    width: inherit;
+    }
+
+    .bizonyitek-jobb{
+        width: inherit;
+        margin: 0;
+    }
+    .bizonyitek-jobb img {
+        width: 250px;
+        height: 125px;
+    }
+    .bizonyitek-jobb p {
+        font-size: 15px;
+    }
+    .bizonyitek-bal img {
+        width: 300px;
+        height: auto;
+    }
+    .bizonyitek-bal h2{
+        width: inherit;
+    }
+
+    #bevezeto{
+        text-align: center;
+        max-width: fit-content;
+    }
+    #tartalomjegyzek{
+        font-size: 18px;
+    }
+    h1{
+        text-align: center;
+    }
+
+    .taktikanevek, .tipplista{
+        margin-left: 30px;
+    }
+    .tipplista{
+        display: block;
+        width: inherit;
+    }
+    .taktikakvideo {
+        width: 500px;
+        margin-left: 80px;
+    }
+    #gombok td{
+        font-size: 20px;
+    }
+    #fo-resz{
+        padding-left: 80px;
+    }
+    .palyak img{
+        max-width: 700px;
+        max-height: 700px;
+    }
+}
+
+
+
+@media screen and (min-width: 400px) {
+    #logo{
+        width: 0px;
+    }
+    #gombok{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #fo-resz{
+        margin-left: 200px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #tartalomjegyzek {
+        width: 0;
+        min-width: 0;
+    }
+    #logo {
+        width: 0;
+    }
+
+    #gombok {
+        padding-left: 5px;
+    }
+    #gombok > td {
+        padding: 10px;
+        font-size: 13px;
+        display: block;
+    }
+
+    #fo-resz{
+        font-size: 12px;
+        padding: 0 10px;
+        position: relative;
+        top: 180px;
+    }
+    #bevezeto {
+        font-size: 15px;
+        
+    }
+    body {
+        text-align: center;
+    }
+    .biz, li {
+        text-align: center;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    .palyak {
+        display: block;
+    }
+    .palyak img{
+        width: 250px;
+        height: auto;
+    }
+    .palyak p{
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .taktikakvideo{
+        width: 250px;
+        height: auto;
+        margin: 0 20px;
+    }
+    .taktikanevek{
+        display: block;
+    }
+    .taktikanevek img{
+        width: 0;
+        margin-left: 0;
+    }
+    li{
+        text-align: inherit;
+        list-style-position: inside;
+    }
+    ul{
+        padding: 0;
+    }
+    .tipplista,.taktikakvideo{
+        width: 100%;
+    }
+    .tipplista li{
+        list-style-type: none;
+    }
+}
